@@ -115,4 +115,7 @@ footer a {
     .description{
         margin: 0 -3rem;
     }
+    footer{
+        bottom: 0;
+    }
 }
