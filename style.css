@@ -102,7 +102,7 @@ footer a {
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 900px){
     .cashtable{
         margin-left:-1.65rem;
     }
