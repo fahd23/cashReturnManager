@@ -48,7 +48,6 @@ div {
 
 .description {
     font-size: larger;
-    margin: 0.5rem;
 }
 label{
     margin: 1rem;
@@ -112,5 +111,8 @@ footer a {
     .container{
         margin-top: 2rem;
         margin-bottom: 2rem;
+    }
+    .description{
+        margin: 0 -3rem;
     }
 }
