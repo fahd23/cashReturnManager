@@ -103,7 +103,7 @@ footer a {
 
 @media screen and (max-width: 900px){
     .cashtable{
-        margin-left:-3.65rem;
+        margin-left:-2.65rem;
     }
     input{
         width: 100%;
@@ -118,5 +118,10 @@ footer a {
     footer{
         position: fixed;
         bottom: 0;
+    }
+}
+@media screen and (max-width: 500px){
+    .cashtable{
+        margin-left:-4rem;
     }
 }
