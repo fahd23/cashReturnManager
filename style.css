@@ -116,6 +116,7 @@ footer a {
         margin: 0 -3rem;
     }
     footer{
+        position: fixed;
         bottom: 0;
     }
 }
