@@ -30,6 +30,7 @@ body {
 }
 
 /* Container */
+
 .container {
     margin: 3rem auto 5rem;
     text-align: center;
@@ -53,10 +54,10 @@ label{
     margin: 1rem;
 }
 input {
-    padding: 0.3rem;
+    padding: 0.7rem;
     display: block;
-    width: 70%;
-    font-size: 1.5rem;
+    width: 40%;
+    font-size: 1rem;
     border: 2px solid var(--dark-color);
     border-radius: 0.75rem;
     margin: auto;
