@@ -88,6 +88,8 @@ footer {
     width: 100%;
     padding: 1rem;
     background-color: var(--secondary-color);
+    position:fixed;
+    bottom: 0;
 }
 
 footer a {
@@ -116,10 +118,7 @@ footer a {
     .description{
         margin: 0 -3rem;
     }
-    footer{
-        position: fixed;
-        bottom: 0;
-    }
+
 }
 @media screen and (max-width: 500px){
     .cashtable{
