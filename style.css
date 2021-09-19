@@ -124,4 +124,7 @@ footer a {
     .cashtable{
         margin-left:-4rem;
     }
+    footer{
+        display:none;
+    }
 }

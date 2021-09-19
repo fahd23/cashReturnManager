@@ -24,9 +24,11 @@ function cashamountvalidate() {
         } else {
             showMessage("The Cash given should be greater than bill amount");
             cashTable.style.display ="none";
+            message.style.color="red";
         }
     } else {
         showMessage("Invalid Bill Amount");
+        message.style.color="red";
         cashTable.style.display ="none";
     }
 }
