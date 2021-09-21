@@ -17,11 +17,15 @@ function cashamountvalidate() {
     const billAmountValue = Number(billAmount.value);
     const cashGivenValue = Number(cashGiven.value);
     if (billAmountValue > 0) {
-        if (cashGivenValue >= billAmountValue) {
+        if (cashGivenValue > billAmountValue) {
             const moneyToBeReturn = cashGivenValue - billAmountValue;
             calculateChange(moneyToBeReturn);
             cashTable.style.display ="block";
-        } else {
+        }else if (cashGivenValue === billAmountValue) {
+            showMessage("The cash given and bill amount are equal, No return money");
+            cashTable.style.display ="none";
+            message.style.color="black";
+        }else {
             showMessage("The Cash given should be greater than bill amount");
             cashTable.style.display ="none";
             message.style.color="red";

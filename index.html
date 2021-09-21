@@ -19,15 +19,18 @@
         <p class="description">
             Enter the bill amount and cash given by the customer and know number of notes to return.
         </p>
-        <div class="bill-input">
-            <label for="bill-amount">Bill Amount:</label>
-            <input id="bill-amount" type="number" />
-        </div>
-        <div class="cash-input">
-            <label for="cash-given">Cash Given:</label>
-            <input id="cash-given" type="number" />
-        </div>
-        <button id="check-btn">Check</button>
+        <form onsubmit="return false">
+            <div class="bill-input">
+                <label for="bill-amount">Bill Amount:</label>
+                <input id="bill-amount" type="number" min="1" required>
+            </div>
+            <div class="cash-input">
+                <label for="cash-given">Cash Given:</label>
+                <input id="cash-given" type="number" min="1" required>
+            </div>
+            <button id="check-btn" type="submit">Check</button>
+        </form>
+
 
         <div id="error-message"></div>
 
