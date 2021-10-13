@@ -2,45 +2,44 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
     <script src="https://kit.fontawesome.com/54a2a2dab1.js" crossorigin="anonymous"></script>
     <title>Cash Return Manager</title>
 </head>
 
 <body>
     <nav class="heading">
-        <h1> Cash Return Manager </h1>
+        <h1>Cash Return Manager</h1>
     </nav>
     <div class="container">
-
         <p class="description">
-            Enter the bill amount and cash given by the customer and know number of notes to return.
+            Enter the bill amount and cash given by the customer and know number of
+            notes to return.
         </p>
         <form onsubmit="return false">
             <div class="bill-input">
                 <label for="bill-amount">Bill Amount:</label>
-                <input id="bill-amount" type="number" min="1" required>
+                <input id="bill-amount" type="number" min="1" required />
             </div>
             <div class="cash-input">
                 <label for="cash-given">Cash Given:</label>
-                <input id="cash-given" type="number" min="1" required>
+                <input id="cash-given" type="number" min="1" required />
             </div>
             <button id="check-btn" type="submit">Check</button>
         </form>
-
 
         <div id="error-message"></div>
 
         <div class="cashtable">
             <table class="cash-return">
-                <caption style="margin:0.5rem">Cash Return</caption>
+                <caption style="margin: 0.5rem">
+                    Cash Return
+                </caption>
                 <tr>
-                    <th>
-                        no.of notes
-                    </th>
+                    <th>no.of notes</th>
                     <td class="no-of-notes"></td>
                     <td class="no-of-notes"></td>
                     <td class="no-of-notes"></td>
@@ -74,6 +73,5 @@
     </footer> -->
     <script src="index.js"></script>
 </body>
-
 
 </html>

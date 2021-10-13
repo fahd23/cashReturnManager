@@ -4,11 +4,11 @@ const checkButton = document.querySelector("#check-btn");
 const message = document.querySelector("#error-message");
 const noOfNotes = document.querySelectorAll(".no-of-notes");
 const cashInputBlock = document.querySelector(".cash-input");
-const cashTable =document.querySelector(".cashtable");
+const cashTable = document.querySelector(".cashtable");
 
 const availableNotes = [2000, 500, 100, 20, 10, 5, 1];
 
-cashTable.style.display ="none";
+cashTable.style.display = "none";
 
 checkButton.addEventListener("click", cashamountvalidate);
 
@@ -20,31 +20,28 @@ function cashamountvalidate() {
         if (cashGivenValue > billAmountValue) {
             const moneyToBeReturn = cashGivenValue - billAmountValue;
             calculateChange(moneyToBeReturn);
-            cashTable.style.display ="block";
-        }else if (cashGivenValue === billAmountValue) {
+            cashTable.style.display = "block";
+        } else if (cashGivenValue === billAmountValue) {
             showMessage("The cash given and bill amount are equal, No return money");
-            cashTable.style.display ="none";
-            message.style.color="black";
-        }else {
+            cashTable.style.display = "none";
+            message.style.color = "black";
+        } else {
             showMessage("The Cash given should be greater than bill amount");
-            cashTable.style.display ="none";
-            message.style.color="red";
+            cashTable.style.display = "none";
+            message.style.color = "red";
         }
     } else {
         showMessage("Invalid Bill Amount");
-        message.style.color="red";
-        cashTable.style.display ="none";
+        message.style.color = "red";
+        cashTable.style.display = "none";
     }
 }
 
 function calculateChange(moneyToBeReturn) {
-
     for (let i = 0; i < availableNotes.length; i++) {
-
         const numOfNotes = Math.trunc(moneyToBeReturn / availableNotes[i]);
         moneyToBeReturn = moneyToBeReturn % availableNotes[i];
         noOfNotes[i].innerText = numOfNotes;
-
     }
 }
 
